@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Random Facts</title>
+</head>
+<body>
+<h1>Random Fact Generator</h1>
+<p id="fact">Click the button to get a random fact!</p>
+<button onclick="getFact()">Get Fact</button>
+<script>
+async function getFact() {
+ const response = await fetch('fact');
+const data = await response.json();
+document.getElementById('fact').innerHTML = data.fact;
+}
+ </script>
+</body>
+</html>
