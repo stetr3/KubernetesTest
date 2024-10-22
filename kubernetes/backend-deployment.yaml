@@ -15,7 +15,7 @@ spec:
   spec:
     containers:
     - name: backend
-      image: stetr3/min-backend
+      image: random-facts-backend:latest
       ports:
       - containerPort: 5000
 ---
