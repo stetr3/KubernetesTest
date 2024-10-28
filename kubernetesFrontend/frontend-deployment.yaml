@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: johwi30/random-facts-frontend
+        image: stetr3/random-facts-frontend
         ports:
         - containerPort: 80
 ---
